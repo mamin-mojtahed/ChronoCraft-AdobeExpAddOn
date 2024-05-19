@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="The ChronoCraft Adobe Express extention for creating timelines" />
+        <meta name="keywords" content="Adobe, Express, Add-On, Time, Event" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ChronoCraft</title>
+        <style>
+            .container {
+                /* margin: 24px; */
+                display: flex;
+                flex-direction: column;
+            }
+            iframe html {
+                margin: 0;
+            }
+
+            button {
+                background-color: rgb(82, 88, 228);
+                border-color: rgb(82, 88, 228);
+                border-radius: 16px;
+                border-style: solid;
+                color: rgb(255, 255, 255);
+                font-family: sans-serif;
+                height: 32px;
+                margin: 10px;
+            }
+
+            button:disabled {
+                background-color: rgb(177, 177, 177);
+                border-color: rgb(177, 177, 177);
+            }
+
+            button:not([disabled]):hover {
+                background-color: rgb(64, 70, 202);
+                cursor: pointer;
+            }
+            button {
+                color: red;
+            }
+            iframe {
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            Please note that this document does not use the spectrum web components theme for Express.
+            You may use "addOnUISdk.app.ui.theme" to get the current theme and style accordingly.
+        -->
+        <div class="container">
+            <iframe
+                src="https://www.chronocraft.wiki"
+                name="targetframe"
+                id="targetframe"
+                style="width: 100%; height: 95vh;"
+            ></iframe>
+            <!-- <button id="clickMe" disabled>Download</button> -->
+        </div>
+        <script type="module" src="index.js"></script>
+    </body>
+</html>

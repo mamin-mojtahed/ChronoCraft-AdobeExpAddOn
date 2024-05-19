@@ -1,7 +1,9 @@
 {
     "testId": "0c1bfab3-5d37-4b1a-9de0-053752713a27",
-    "name": "Hello World",
+    "name": "ChronoCraft",
+    "description": "A simple timeline generator",
     "version": "1.0.0",
+    "icon": [{"src" : "logo.jpeg", "type" : "image/jpeg", "sizes" : "48x48"}],
     "manifestVersion": 2,
     "requirements": {
         "apps": [

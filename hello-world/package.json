@@ -15,7 +15,12 @@
         "panel"
     ],
     "devDependencies": {
-        "@adobe/ccweb-add-on-scripts": "^2.0.0",
+        "@adobe/ccweb-add-on-scripts": "^3.6.0",
         "@types/adobe__ccweb-add-on-sdk": "^1.3.0"
+    },
+    "overrides": {
+        "tmp": "^0.2.5",
+        "qs": "^6.14.1",
+        "axios": "^1.13.2"
     }
 }
